@@ -63,9 +63,6 @@ let
     buildRustCrateForPkgs = _: buildRustCrateNew;
     defaultCrateOverrides = defaultCrateOverrides // crateConfig;
     release = cargoProfile == "release" || cargoProfile == "release_fast";
-    # Enable tracing_unstable for dependency resolution so valuable crate is included.
-    # This matches the --cfg tracing_unstable passed via crate-config.nix at compile time.
-    extraTargetFlags = { tracing_unstable = true; };
   };
 
   # Wrap the devenv binary with required paths
