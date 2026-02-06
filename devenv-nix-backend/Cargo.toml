@@ -21,6 +21,7 @@ tokio.workspace = true
 tokio-shutdown.workspace = true
 uuid.workspace = true
 
+libc.workspace = true
 devenv-core.workspace = true
 devenv-cache-core.workspace = true
 devenv-eval-cache.workspace = true
